@@ -1,0 +1,4 @@
+# CNN byte channel for Hybrid Memory Sentinel (the largest download).
+# Install after requirements.txt:  pip install -r requirements-cnn.txt
+# Everything except training and using a CNN works without it.
+torch>=2.2             # tested 2.14.1 (the CPU build is enough)

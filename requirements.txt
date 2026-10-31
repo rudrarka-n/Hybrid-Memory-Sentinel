@@ -1,0 +1,21 @@
+# Hybrid Memory Sentinel - Python 3.10 or newer (64-bit).
+# Install with:  pip install -r requirements.txt
+# For the CNN also: pip install -r requirements-cnn.txt (kept separate, so a
+# failed torch install can't stop the rest from installing)
+# Tested with Python 3.11.9 and the versions in the comments.
+
+# Core: data handling and the structural (feature) models
+numpy>=1.26            # tested 2.4.6
+pandas>=2.1            # tested 3.0.6
+scikit-learn>=1.4      # tested 1.9.1
+joblib>=1.3            # tested 1.6.0
+xgboost>=3.2           # tested 3.2.0; the bundled models are saved in XGBoost's own
+                       # model format by 3.2.0, which every later version can load
+lightgbm>=4.0          # tested 4.7.0 (optional "--model lightgbm")
+
+# Reading memory dumps
+volatility3>=2.7       # tested 2.28.2 (runs the 18 plugins on a dump)
+capstone>=5.0          # tested 5.0.9 (checks that pages hold real x86 code)
+
+# Tests
+pytest>=8.0            # tested 9.1.1

@@ -1,0 +1,208 @@
+{
+  "dataset": "/mnt/user-data/uploads/Project/data/Obfuscated-MalMem2022.csv",
+  "split": "group",
+  "seed": 42,
+  "n_train": 47033,
+  "n_test": 11563,
+  "n_features": 57,
+  "model": "xgboost",
+  "models": {
+    "xgboost": {
+      "n": 11563,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "confusion": {
+        "tn": 5870,
+        "fp": 0,
+        "fn": 0,
+        "tp": 5693
+      },
+      "auc": 1.0
+    },
+    "lightgbm": {
+      "n": 11563,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "confusion": {
+        "tn": 5870,
+        "fp": 0,
+        "fn": 0,
+        "tp": 5693
+      },
+      "auc": 1.0
+    },
+    "random_forest": {
+      "n": 11563,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "confusion": {
+        "tn": 5870,
+        "fp": 0,
+        "fn": 0,
+        "tp": 5693
+      },
+      "auc": 1.0
+    },
+    "decision_tree": {
+      "n": 11563,
+      "accuracy": 0.999913517253308,
+      "precision": 1.0,
+      "recall": 0.9998243456876866,
+      "f1": 0.9999121651295564,
+      "fpr": 0.0,
+      "confusion": {
+        "tn": 5870,
+        "fp": 0,
+        "fn": 1,
+        "tp": 5692
+      },
+      "auc": 0.9999121728438434
+    },
+    "knn": {
+      "n": 11563,
+      "accuracy": 0.9997405517599239,
+      "precision": 0.9996487530734106,
+      "recall": 0.9998243456876866,
+      "f1": 0.9997365416703259,
+      "fpr": 0.00034071550255536625,
+      "confusion": {
+        "tn": 5868,
+        "fp": 2,
+        "fn": 1,
+        "tp": 5692
+      },
+      "auc": 0.9999121129956962
+    },
+    "logistic_regression": {
+      "n": 11563,
+      "accuracy": 0.9984433105595434,
+      "precision": 0.9991204925241864,
+      "recall": 0.9977164939399262,
+      "f1": 0.9984179996484444,
+      "fpr": 0.0008517887563884157,
+      "confusion": {
+        "tn": 5865,
+        "fp": 5,
+        "fn": 13,
+        "tp": 5680
+      },
+      "auc": 0.9995798959300567
+    },
+    "svm": {
+      "n": 11563,
+      "accuracy": 0.9986162760529275,
+      "precision": 0.9992963940193491,
+      "recall": 0.9978921482522396,
+      "f1": 0.9985937774652839,
+      "fpr": 0.0006814310051107325,
+      "confusion": {
+        "tn": 5866,
+        "fp": 4,
+        "fn": 12,
+        "tp": 5681
+      },
+      "auc": 0.9999625949079401
+    }
+  },
+  "family_recall": {
+    "Ransomware": {
+      "n": 1840,
+      "recall": 1.0
+    },
+    "Spyware": {
+      "n": 2039,
+      "recall": 1.0
+    },
+    "Trojan": {
+      "n": 1814,
+      "recall": 1.0
+    }
+  },
+  "top_features": [
+    {
+      "feature": "svcscan.nservices",
+      "importance": 0.7430434226989746
+    },
+    {
+      "feature": "svcscan.shared_process_services",
+      "importance": 0.2207527905702591
+    },
+    {
+      "feature": "svcscan.process_services",
+      "importance": 0.007749270182102919
+    },
+    {
+      "feature": "handles.avg_handles_per_proc",
+      "importance": 0.0031142968218773603
+    },
+    {
+      "feature": "psxview.not_in_deskthrd",
+      "importance": 0.0029537258669734
+    },
+    {
+      "feature": "handles.ndesktop",
+      "importance": 0.002238927874714136
+    },
+    {
+      "feature": "callbacks.ncallbacks",
+      "importance": 0.002145367907360196
+    },
+    {
+      "feature": "handles.nhandles",
+      "importance": 0.0013011520495638251
+    },
+    {
+      "feature": "handles.nfile",
+      "importance": 0.001207959488965571
+    },
+    {
+      "feature": "psxview.not_in_ethread_pool_false_avg",
+      "importance": 0.0010723028099164367
+    },
+    {
+      "feature": "malfind.ninjections",
+      "importance": 0.0010464256629347801
+    },
+    {
+      "feature": "malfind.commitCharge",
+      "importance": 0.0010464226361364126
+    },
+    {
+      "feature": "ldrmodules.not_in_init",
+      "importance": 0.000996702117845416
+    },
+    {
+      "feature": "pslist.avg_handlers",
+      "importance": 0.0009112622356042266
+    },
+    {
+      "feature": "psxview.not_in_pslist",
+      "importance": 0.0007655412191525102
+    }
+  ],
+  "threshold": 0.5,
+  "at_scan_threshold": {
+    "n": 11563,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "confusion": {
+      "tn": 5870,
+      "fp": 0,
+      "fn": 0,
+      "tp": 5693
+    },
+    "auc": 1.0
+  }
+}

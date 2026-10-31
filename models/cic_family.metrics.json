@@ -1,0 +1,67 @@
+{
+  "dataset": "/mnt/user-data/uploads/Project/data/Obfuscated-MalMem2022.csv",
+  "split": "group",
+  "seed": 42,
+  "classes": [
+    "Benign",
+    "Ransomware",
+    "Spyware",
+    "Trojan"
+  ],
+  "n_train": 47033,
+  "n_test": 11563,
+  "accuracy": 0.8592925711320591,
+  "macro_f1": 0.7834123381540224,
+  "per_class": {
+    "Benign": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5870.0
+    },
+    "Ransomware": {
+      "precision": 0.6711087420042644,
+      "recall": 0.6842391304347826,
+      "f1-score": 0.6776103336921421,
+      "support": 1840.0
+    },
+    "Spyware": {
+      "precision": 0.7550351288056206,
+      "recall": 0.790583619421285,
+      "f1-score": 0.7724005749880211,
+      "support": 2039.0
+    },
+    "Trojan": {
+      "precision": 0.7104637336504162,
+      "recall": 0.6587651598676957,
+      "f1-score": 0.6836384439359268,
+      "support": 1814.0
+    }
+  },
+  "confusion": [
+    [
+      5870,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1259,
+      272,
+      309
+    ],
+    [
+      0,
+      249,
+      1612,
+      178
+    ],
+    [
+      0,
+      368,
+      251,
+      1195
+    ]
+  ]
+}

@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# Editors and OS files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.log
+
+# Private material: move this folder out before sharing
+temp/
+
+# Project docs are kept local only, except the screenshots the README shows
+docs/*
+!docs/images/
+
+# User data: keep the folders (README.txt) but not their contents
+input/*
+!input/README.txt
+dataset/*
+!dataset/README.txt
+CNNDataSet/benign/*
+CNNDataSet/malicious/*
+!CNNDataSet/benign/.gitkeep
+!CNNDataSet/malicious/.gitkeep
+reports/*
+!reports/README.txt
+
+# Only the bundled models are shared
+models/*
+!models/README.txt
+!models/cic_structural.joblib
+!models/cic_structural.metrics.json
+!models/cic_family.joblib
+!models/cic_family.metrics.json
+
+# Memory dumps and malware samples must never be committed
+*.raw
+*.vmem
+*.vmss
+*.vmsn
+*.elf
+*.dmp
+*.mem
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.sav
+*.exe
+*.dll
+*.sys
+*.scr
+*.bin
+
+# Volatility output and model files outside models/
+*_vol/
+*.npy
+*.pt
